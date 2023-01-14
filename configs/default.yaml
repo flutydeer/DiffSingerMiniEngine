@@ -16,6 +16,8 @@ server:
   cache_dir: cache/
   max_threads: 1
 providers:
+  - name: CPUExecutionProvider
+    options: {}
   - name: CUDAExecutionProvider
     options:
       device_id: 0
@@ -26,5 +28,3 @@ providers:
   - name: DmlExecutionProvider
     options:
       device_id: 0
-  - name: CPUExecutionProvider
-    options: {}
